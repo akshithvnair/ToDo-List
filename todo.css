@@ -1,0 +1,94 @@
+.container{
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+}
+.header{
+    display: flex;
+    font-size: 30px;
+    color: black;
+}
+.addButton{
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    background: rgba(255, 180, 200, 0.3);
+    color: #dbdbdb;
+}
+.addButton:hover{
+    background: rgba(255, 180, 200, 0.2);
+    color: #dbdbdb;
+}
+.inputBar{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 160px;
+    padding-left: 10px;
+    padding-right: 30px;
+    background: rgba(255, 180, 200, 0.3);
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.input{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.inputBar::placeholder{
+    color: #dbdbdb;
+    font-size: 15px;
+}
+.taskContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.taskContainer p{
+    margin: 0;
+    flex-grow: 1;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+}
+.taskContainer.finished p{
+    text-decoration: line-through;
+    color: gray;
+}
+.taskDivision{
+    display: flex;
+    flex-direction: column;
+}
+.taskListWrapper{
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 30px;
+}
+.completed{
+    border: none;
+    padding-right: 6px;
+    padding-top: 2px;
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 15px;
+    background: rgba(255, 180, 200, 0.3);
+    color: red;
+}
+.completed:hover{
+    background: rgba(255, 180, 200, 0.2);
+    color: red;
+}
